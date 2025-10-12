@@ -1,20 +1,6 @@
 # 우리 주변 인사이트, 우주인
 
-<img width="1199" alt="image" src="https://github.com/user-attachments/assets/75b61016-5e41-45c3-b362-e18352ee94f9">
-
-
-
-## 목차
-
-- 핵심 기능
-- 구현 기능 설명
-- ERD 다이어그램
-- 코카인 팀원 소개
-- 배포 링크
-- API 명세서
-- 기능 명세서
-- 에러코드 명세서
-- Github 프로젝트
+<img width="862" height="368" alt="image" src="https://github.com/user-attachments/assets/d591c630-ec18-4cc0-985c-ba0b5060eda6" />
 
 <br>
 
@@ -33,38 +19,6 @@
 <br>
 
 ## 구현 기능 설명
-
-### 📲 Android
-
-
-#### **1. 멀티모듈**
-
-![1](https://github.com/user-attachments/assets/61eaca90-80f2-4b59-bd8f-0b963803678b)
-
-- 처음에는 단순히 너무 많아 정신이 없는 xml 파일을 분리해서 보고 싶어서 시작한 멀티모듈 입니다.
-- 저희 앱의 탭바를 기준으로 피처 모듈을 나누고, 핵심 기능과 데이터는 상위 모듈로 구현했습니다.
-- 구현은 어려웠지만, 분리된 모듈에서 각자 작업하다 보니 멀티모듈을 적용하기 전보다 충돌 횟수가 현저히 줄어들어 만족했습니다.
-
-####  **2. 딥링크를 통한 내비게이션**
-
-<img width="667" alt="2" src="https://github.com/user-attachments/assets/1c1a8c5a-d845-4c23-846b-52f091bb0e87">
-<img width="843" alt="3" src="https://github.com/user-attachments/assets/88ea7693-610f-4574-be9c-6d393d35f81b">
-
-- 기능 모듈끼리 서로 참조하고 있지 않고 있기 때문에 모듈 간 화면 전환을 할 때 어떻게 해야 할지 막막했습니다.
-- 딥링크를 통해서 화면 전환을 구현하기 위해, 모든 기능이 참조 가능한 하위 내비게이션 모듈을 만들어 그 안에 딥링크를 지정하고 화면 전환을 하게 되었습니다.
-- 화면 간 전달해야 하는 데이터의 경우, 행사 id, 멤버 id와 같은 간단한 데이터였기에 전달이 용이했습니다.
-
-#### **2. 지도 뷰**
-
-<img width="1166" alt="image" src="https://github.com/user-attachments/assets/93084b50-0adb-4f8c-8043-17a31556dcdc">
-
-- 사용자의 위치 정보를 바탕으로 실시간으로 주변 정보를 조회하는 기능을 구현했습니다.
-- 최대한 과부하를 덜 주기 위해, 
-약 20초의 간격을 두고 사용자의 위치를 파악하여 지도에 주변 행사를 마커로 띄우는 것을 구현했습니다.
-
-- 화면 범위 안에만 들어오는 행사를 불러오기 위해, 화면의 시작 위도 경도, 끝 위도 경도를 계산하여 불필요한 데이터 요청을 최소화했습니다.
-
----
 
 ### 🔙 BE
 
@@ -120,34 +74,6 @@
 
 <br>
 
-## 코카인 팀원 소개
-
-### 백엔드
-
-| <img src="https://github.com/user-attachments/assets/e32a3a97-d546-43a0-8604-f70e81bf1579" width="150" height="150"/> | <img src="https://github.com/user-attachments/assets/0f5bccd7-e112-421a-833d-034f6d87047f" width="150" height="150"/> | <img src="https://github.com/user-attachments/assets/fb68b420-8d63-41f2-a72c-a2951b810ee7" width="150" height="150"/> |
-|---|---|---|
-| [전남대 BE 모아림](https://github.com/ariimo/Team26_BE) | [전남대 BE 조홍식](https://github.com/Daolove0323/Team26_BE) | [전남대 BE 이장안](https://github.com/lja3723/Team26_BE) |
-
-### 안드로이드
-
-| <img src="https://github.com/user-attachments/assets/2a6f0909-f5db-46c8-8dbf-6cb42742d6a8" width="150" height="150"/> | <img src="https://github.com/user-attachments/assets/2875ab60-946c-48ec-8820-d561333ec689" width="150" height="150"/> |
-|---|---|
-| [전남대 Android 이민서](https://github.com/LEEMINSEO00/Team26_Android) | [전남대 Android 장수민](https://github.com/sumintnals/Team26_Android) |
-
-<br>
-
-## 🌐 배포 링크
-
-### 백엔드
-
-https://www.wouldyouin.store
-
-### 안드로이드
-
-https://drive.google.com/file/d/1JzK60wY1RKNoUNFT1CtsWDQZR6l1gE__/view?usp=sharing
-
-<br>
-
 ## 📖 API 명세서
 
 https://www.notion.so/e8d71c13017844de97303da3c73d0840?v=8432c86ed8114eb1943ff861399fe6c1
@@ -163,9 +89,3 @@ https://www.notion.so/67925a6cfccb412191c1e50e958e87f4
 ## 🚨 에러코드 정의서
 
 https://www.notion.so/fba45247c95d4a129f60a8afddd1228f
-
-<br>
-
-## 👨‍👩‍👧‍👦 Github 프로젝트
-
-https://github.com/orgs/kakao-tech-campus-2nd-step3/projects/26
